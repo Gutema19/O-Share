@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <title>O-Share</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
     </style>
@@ -42,13 +43,20 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <script>
+      AOS.init({
+        delay: 0, 
+        duration: 600, 
+        easing: 'ease-out',
+      });
+    </script>
     <div>
       <link href="./tentang.css" rel="stylesheet" />
       <title>Tentang - O-Share</title>
       <meta property="og:title" content="Tentang - O-Share" />
       <div class="tentang-container">
         <div class="tentang-container01">
-          <div class="tentang-container02">
+          <div class="tentang-container02" data-aos="fade-down">
             <div class="tentang-container03">
               <img
                 alt="image"
@@ -78,13 +86,13 @@
             </div>
           </div>
           <div class="tentang-container06">
-            <img
+            <img data-aos="fade-right"
               alt="image"
               src="public/playground_assets/dancingdoodle1.svg"
               class="tentang-image03"
             />
             <div class="tentang-container07">
-              <h1 class="tentang-text01">
+              <h1 class="tentang-text01" data-aos="fade-up" data-aos-delay="500">
                 <span>Semua Tentang</span>
                 <br />
                 <span>Kami</span>
@@ -92,7 +100,7 @@
                 <span>Ada Disini</span>
               </h1>
             </div>
-            <img
+            <img 
               alt="image"
               src="public/playground_assets/akar-icons_facebook-fill1.svg"
               class="tentang-image04"
@@ -108,13 +116,13 @@
               class="tentang-image06"
             />
             <div class="tentang-container08">
-              <span class="tentang-text07">
+              <span class="tentang-text07" data-aos="fade-up" data-aos-delay="400">
                 Mari cari tahu tentang kami sebagai media yang membantu mereka
                 yang membutuhkan
               </span>
-              <button class="tentang-button button">Yuk Cari Tahu</button>
+              <button class="tentang-button button" data-aos="fade-up" data-aos-delay="500">Yuk Cari Tahu</button>
             </div>
-            <img
+            <img data-aos="fade-left"
               alt="image"
               src="public/playground_assets/group%20102.svg"
               class="tentang-image07"
@@ -122,13 +130,13 @@
           </div>
         </div>
         <div class="tentang-container09">
-          <h1 class="tentang-text08">
+          <h1 class="tentang-text08" data-aos="fade-up" data-aos-delay="400">
             <span>Tak Kenal</span>
             <br />
             <span>maka Tak Sayang</span>
             <span></span>
           </h1>
-          <span class="tentang-text13">
+          <span class="tentang-text13" data-aos="fade-up" data-aos-delay="500">
             O-Share adalah platform yang menyediakan wadah untuk menggalang dana
             dan berdonasi secara online bagi individu, organisasi, komunitas,
             maupun perusahaan di Indonesia. Hadir sebagai platform yang aman dan
@@ -140,26 +148,26 @@
           </span>
         </div>
         <div class="tentang-container10">
-          <h1 class="tentang-text14"><span>Tim Kami</span></h1>
-          <img
+          <h1 class="tentang-text14" data-aos="fade-up" data-aos-delay="400"><span>Tim Kami</span></h1>
+          <img data-aos="fade-left"
             alt="image"
             src="public/playground_assets/group%20103.svg"
             class="tentang-image08"
           />
-          <span class="tentang-text16">
+          <span class="tentang-text16" data-aos="fade-up" data-aos-delay="500">
             <span>Kehadiran situs ini tidak terlepas dari mereka</span>
             <br />
             <span>yang telah bekerja keras dalam pembuatannya.</span>
           </span>
           <div class="tentang-container11">
-            <div class="tentang-container12">
-              <img
+            <div class="tentang-container12" data-aos="flip-right" data-aos-delay="400">
+              <img 
                 alt="image"
                 src="public/playground_assets/group%2038.svg"
                 class="tentang-image09"
               />
             </div>
-            <div class="tentang-container13">
+            <div class="tentang-container13" data-aos="flip-right" data-aos-delay="500">
               <img
                 alt="image"
                 src="public/playground_assets/group%2039.svg"
@@ -169,21 +177,21 @@
           </div>
           <div class="tentang-container14">
             <div class="tentang-container15">
-              <div class="tentang-container16">
+              <div class="tentang-container16" data-aos="flip-right" data-aos-delay="400">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2040.svg"
                   class="tentang-image11"
                 />
               </div>
-              <div class="tentang-container17">
+              <div class="tentang-container17" data-aos="flip-right" data-aos-delay="500">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2041.svg"
                   class="tentang-image12"
                 />
               </div>
-              <div class="tentang-container18">
+              <div class="tentang-container18" data-aos="flip-right" data-aos-delay="600">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2042.svg"
@@ -195,14 +203,14 @@
         </div>
         <div class="tentang-container19">
           <div class="tentang-container20">
-            <h1 class="tentang-text19">Narahubung</h1>
-            <span class="tentang-text20">
+            <h1 class="tentang-text19" data-aos="fade-up">Narahubung</h1>
+            <span class="tentang-text20" data-aos="fade-up">
               Apabila terdapat pertanyaan ataupun hal lainnya anda dapat
               menghubungi kontak-kontak dibawah ini
             </span>
           </div>
           <div class="tentang-container21">
-            <div class="tentang-container22">
+            <div class="tentang-container22" data-aos="fade-up" data-aos-delay="400">
               <div class="tentang-container23">
                 <img
                   alt="image"
@@ -212,7 +220,7 @@
               </div>
               <span class="tentang-text21">O-Share Official</span>
             </div>
-            <div class="tentang-container24">
+            <div class="tentang-container24"  data-aos="fade-up" data-aos-delay="500">
               <img
                 alt="image"
                 src="public/playground_assets/cib_gmail.svg"
@@ -220,7 +228,7 @@
               />
               <span class="tentang-text22">OShare@gmail.com</span>
             </div>
-            <div class="tentang-container25">
+            <div class="tentang-container25"  data-aos="fade-up" data-aos-delay="600">
               <img
                 alt="image"
                 src="public/playground_assets/ant-design_twitter-circle-filled%202.svg"
