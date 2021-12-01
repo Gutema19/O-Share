@@ -103,3 +103,36 @@
   text-transform: none;
   text-decoration: none;
 }
+
+button:hover{
+  background: #2D4710;
+  border: 5px solid #4D7520;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.bullet-menu{
+  padding: 4.7%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transition: 0.3s;
+  margin-left: -20px;
+  background-color: #4D7520;
+}
+
+.bullet-menu:hover {
+  padding-left: 10px;
+  border-radius: 100%; 
+}
+
+.bullet-menu.src-btn{
+  position: absolute;
+  margin-top: 14px;
+  margin-right: -16px;
+}
+
+.bullet-menu.src-btn:hover{
+  padding-top: 9px;
+}
+

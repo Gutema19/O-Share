@@ -80,14 +80,18 @@
   text-align: center;
   font-family: Cardo;
   margin-left: var(--dl-space-space-oneandhalfunits);
-  padding-top: 20px;
   margin-right: var(--dl-space-space-oneandhalfunits);
-  padding-left: 60px;
   border-radius: 20px;
-  padding-right: 60px;
-  padding-bottom: 20px;
   background-color: var(--dl-color-danger-300);
 }
+
+.pengguna-button:hover {
+  background: #701414;
+  border: 5px solid #A22020;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
 .pengguna-container06 {
   flex: 0 0 auto;
   width: 100%;
@@ -482,12 +486,8 @@
   text-align: center;
   font-family: Cardo;
   margin-left: 63%;
-  padding-top: 18px;
   margin-right: 63%;
-  padding-left: 50px;
   border-radius: 20px;
-  padding-right: 50px;
-  padding-bottom: 18px;
   background-color: #4D7520;
 }
 .pengguna-image10 {

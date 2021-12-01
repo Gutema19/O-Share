@@ -35,16 +35,6 @@
   flex-direction: row;
   justify-content: center;
 }
-.tentang-image {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  transition: 0.3s;
-  margin-left: -20px;
-}
-.tentang-image:hover {
-  background-image: url("public/playground_assets/group%2022%20variant2.svg");
-}
 .tentang-text {
   font-family: Cardo;
   margin-left: var(--dl-space-space-twounits);
@@ -182,9 +172,7 @@
   font-size: 20px;
   text-align: center;
   font-family: Cardo;
-  padding-top: 23px;
   border-radius: 20px;
-  padding-bottom: 23px;
   background-color: #4D7520;
 }
 .tentang-image07 {
