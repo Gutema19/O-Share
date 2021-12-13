@@ -1,0 +1,197 @@
+.lupa-sandi-part2-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.lupa-sandi-part2-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lupa-sandi-part2-container2 {
+  flex: 0 0 auto;
+  width: 582px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(172, 255, 173, 0.2);
+}
+.lupa-sandi-part2-image {
+  top: 175px;
+  right: -20px;
+  width: 539px;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+}
+.lupa-sandi-part2-image1 {
+  top: 70px;
+  left: 81px;
+  width: 139px;
+  height: 64px;
+  position: absolute;
+  object-fit: cover;
+}
+.lupa-sandi-part2-container3 {
+  flex: 0 0 auto;
+  width: 713px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 17%;
+  flex-direction: column;
+  justify-content: center;
+}
+.lupa-sandi-part2-container4 {
+  top: 20%;
+  left: 17%;
+  width: 460px;
+  height: 155px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.lupa-sandi-part2-text {
+  color: #4d7520;
+  font-size: 56px;
+  font-style: normal;
+  font-family: Oswald;
+  font-weight: 400;
+}
+.lupa-sandi-part2-text1 {
+  font-size: 18px;
+  margin-top: 4%;
+  font-family: Cardo;
+}
+.lupa-sandi-part2-image2 {
+  width: 100px;
+  margin-top: 5%;
+  object-fit: cover;
+}
+.lupa-sandi-part2-form {
+  width: 494px;
+  height: 461px;
+}
+.lupa-sandi-part2-container5 {
+  top: 318px;
+  left: -65px;
+  width: 755px;
+  height: 88px;
+  display: flex;
+  position: absolute;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: flex-start;
+}
+.lupa-sandi-part2-textinput {
+  top: 35px;
+  left: 191px;
+  color: var(--dl-color-gray-black);
+  width: 446px;
+  height: 51px;
+  position: absolute;
+  font-family: Cardo;
+  border-color: #4d7520;
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 10px;
+}
+.lupa-sandi-part2-image3 {
+  top: 0px;
+  left: 190px;
+  width: 24px;
+  position: absolute;
+  object-fit: cover;
+}
+.lupa-sandi-part2-text4 {
+  top: 5px;
+  left: 219px;
+  position: absolute;
+  font-family: Cardo;
+}
+.lupa-sandi-part2-image4 {
+  top: 51px;
+  left: 594px;
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  object-fit: cover;
+}
+.lupa-sandi-part2-container6 {
+  top: 430px;
+  left: -65px;
+  width: 755px;
+  height: 88px;
+  display: flex;
+  position: absolute;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: center;
+  justify-content: center;
+}
+.lupa-sandi-part2-textinput1 {
+  top: 35px;
+  left: 191px;
+  color: var(--dl-color-gray-black);
+  width: 446px;
+  height: 51px;
+  position: absolute;
+  font-family: Cardo;
+  border-color: #4d7520;
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 10px;
+}
+.lupa-sandi-part2-image5 {
+  top: 0px;
+  left: 190px;
+  width: 24px;
+  position: absolute;
+  object-fit: cover;
+}
+.lupa-sandi-part2-text5 {
+  top: 5px;
+  left: 219px;
+  position: absolute;
+  font-family: Cardo;
+}
+.lupa-sandi-part2-image6 {
+  top: 51px;
+  left: 594px;
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  object-fit: cover;
+}
+.lupa-sandi-part2-button {
+  color: #fdfdfc;
+  width: 221px;
+  height: 59px;
+  font-size: 20px;
+  margin-top: 61%;
+  text-align: center;
+  font-family: Cardo;
+  margin-left: 49%;
+  padding-top: 3.7%;
+  margin-right: 8px;
+  padding-left: 30px;
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-bottom: 3.7%;
+  background-color: #4D7520;
+}
+.lupa-sandi-part2-text6 {
+  right: 56.8%;
+  bottom: 22%;
+  position: absolute;
+  font-size: 18px;
+  font-family: Cardo;
+}

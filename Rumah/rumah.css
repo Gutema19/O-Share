@@ -85,14 +85,6 @@
   padding-left: 10%;
   border-radius: 20px;
 }
-.rumah-image02 {
-  top: 32px;
-  right: -15px;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  object-fit: cover;
-}
 .rumah-container06 {
   width: 1280px;
   height: 676px;
@@ -998,4 +990,18 @@
   position: absolute;
   font-size: 18px;
   font-family: Cardo;
+}
+.list-menu.pt1 {
+  margin-left: 19.5%;
+  margin-top: 9%;
+}
+.rumah-navlink.button{
+  padding-top: 2.7%;
+  padding-left: 7.8%;
+  padding-bottom: 3%;
+}
+
+.rumah-navlink.button.pt1{
+  padding-left: 16%;
+  margin-top: 115%;
 }

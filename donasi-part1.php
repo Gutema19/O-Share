@@ -5,7 +5,9 @@
     <title>O-Share</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:card" content="summary_large_image"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Donasi/donasi-part1.js" type="text/javascript"></script>
     <script src="Jscript.js" type="text/javascript"></script>
@@ -45,12 +47,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  <script>
+      AOS.init({
+        delay: 0, 
+        duration: 600, 
+        easing: 'ease-out',
+      });
+    </script>
     <div>
       <link href="Donasi/donasi-part1.css" rel="stylesheet"/>
       <title>Donasi Part 1 - O-Share</title>
       <meta property="og:title" content="Donasi Part 1 - O-Share" />
       <div class="donasi-part1-container">
-        <div class="donasi-part1-container01">
+        <div class="donasi-part1-container01"  data-aos="fade-down" data-aos-delay="300">
           <div class="donasi-part1-container02">
             <button type="button" class="bullet-menu bck">  
             <img
@@ -74,29 +83,31 @@
               placeholder="placeholder"
               class="donasi-part1-textinput input"
             />
-            <img
+            <button type="button" class="src-btn">
+              <img
               alt="image"
-              src="public/playground_assets/search_btn1.svg"
-              class="donasi-part1-image02"
+              src="public/playground_assets/ant-design_search-outlined.svg"
+              class="tentang-image00"
             />
+            </button>
           </div>
         </div>
-        <div class="donasi-part1-container05">
+        <div class="donasi-part1-container05" data-aos="zoom-in" data-aos-delay="300">
           <h1 class="donasi-part1-text01">
             <span class="donasi-part1-text03"></span>
           </h1>
         </div>
         <div class="donasi-part1-container06">
           <div class="donasi-part1-container07">
-            <img
+            <img data-aos="zoom-in-down" data-aos-delay="300"
               alt="image"
               src=""
               class="donasi-part1-image04"
             />
-            <div class="donasi-part1-container08">
+            <div class="donasi-part1-container08" data-aos="zoom-in-down" data-aos-delay="400">
               <span class="donasi-part1-text04"></span>
             </div>
-            <img
+            <img data-aos="fade-left" data-aos-delay="300"
               alt="image"
               src="public/playground_assets/lovingdoodle.svg"
               class="donasi-part1-image05"
@@ -104,16 +115,16 @@
           </div>
         </div>
         <div class="donasi-part1-container09">
-          <div class="donasi-part1-container10">
+          <div class="donasi-part1-container10" data-aos="zoom-in-down" data-aos-delay="500">
             <span class="donasi-part1-text05"></span>
           </div>
-          <img
+          <img data-aos="zoom-in-down" data-aos-delay="600"
             alt="image"
             src="public/playground_assets/group%20116.svg"
             class="donasi-part1-image06"
           />
         </div>
-        <img
+        <img data-aos="fade-right" data-aos-delay="300"
           alt="image"
           src="public/playground_assets/dancingdoodle1.svg"
           class="donasi-part1-image07"
@@ -121,21 +132,21 @@
         <div class="donasi-part1-container11">
           <div class="donasi-part1-container12">
             <h1 class="donasi-part1-text06">
-              <span class="donasi-part1-text07">Mari Cari</span>
+              <span class="donasi-part1-text07" data-aos="fade-up" data-aos-delay="300">Mari Cari</span>
               <br />
-              <span class="donasi-part1-text09">Tahu Bersama</span>
+              <span class="donasi-part1-text09"data-aos="fade-up" data-aos-delay="350">Tahu Bersama</span>
             </h1>
           </div>
         </div>
         <div class="donasi-part1-container13">
           <div class="donasi-part1-container14">
-            <span class="donasi-part1-text11">
+            <span class="donasi-part1-text11" data-aos="fade-up" data-aos-delay="300">
               
             </span>
           </div>
         </div>
         <div class="donasi-part1-container15">
-          <div class="donasi-part1-container16">
+          <div class="donasi-part1-container16" data-aos="fade-up" data-aos-delay="300">
             <button class="donasi-part1-button button">Yuk Dilanjut</button>
           </div>
         </div>

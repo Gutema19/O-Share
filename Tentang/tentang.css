@@ -636,3 +636,7 @@
   font-size: 18px;
   font-family: Cardo;
 }
+
+.bullet-menu.src-btn{
+  margin-left: 10%;
+}

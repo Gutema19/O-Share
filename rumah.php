@@ -7,6 +7,9 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Rumah/rumah.js" type="text/javascript"></script>
     <script src="Jscript.js" type="text/javascript"></script>
     <link href="Donasi/donasi.css" rel="stylesheet" />
@@ -46,19 +49,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  <script>
+      AOS.init({
+        delay: 0, 
+        duration: 600, 
+        easing: 'ease-out',
+      });
+    </script>
+    <img data-aos="fade-right" data-aos-delay="300"
+              alt="image"
+              src="public/playground_assets/swingingdoodle1.svg"
+              class="rumah-image07"
+            />
     <div>
-      <link href="Rumah/rumah.css" rel="stylesheet" />
+      <link href="Rumah/rumah.css" rel="stylesheet"/>
       <title>O-Share</title>
       <meta property="og:title" content="O-Share" />
       <div class="rumah-container">
         <div class="rumah-container01">
-          <div class="rumah-container02">
+          <div class="rumah-container02" data-aos="fade-down" data-aos-delay="300">
             <div class="rumah-container03">
-              <img
+            <button type="button" class="bullet-menu">
+                <img
                 alt="image"
-                src="public/playground_assets/group%2022.svg"
-                class="rumah-image"
+                src="public/playground_assets/Group 23.svg"
+                class="tentang-image00"
               />
+              </button>
               <span class="rumah-text">Rumah</span>
             </div>
             <div class="rumah-container04">
@@ -74,15 +91,17 @@
                 placeholder="placeholder"
                 class="rumah-textinput input"
               />
+              <button type="button" class="src-btn">
               <img
                 alt="image"
-                src="public/playground_assets/search_btn1.svg"
+                src="public/playground_assets/ant-design_search-outlined.svg"
                 class="rumah-image02"
               />
+            </button>
             </div>
           </div>
           <div class="rumah-container06">
-            <div class="rumah-container07">
+            <div class="rumah-container07" data-aos="fade-down" data-aos-delay="300">
               <h1 class="rumah-text01">
                 <span>Lebih Baik</span>
                 <br />
@@ -108,39 +127,37 @@
               class="rumah-image05"
             />
             <div class="rumah-container08">
-              <span class="rumah-text08">
+              <span class="rumah-text08" data-aos="fade-up" data-aos-delay="400">
                 O-Share adalah platform yang menyediakan wadah untuk menggalang
                 dana dan berdonasi secara online bagi individu, organisasi,
                 komunitas, maupun perusahaan di Indonesia.
               </span>
-              <a href="/donasi.html" class="rumah-navlink button">Kuy Bantu</a>
+              <button class="rumah-navlink button" data-aos="fade-up" data-aos-delay="500"><a href="donasi.php"></a>Kuy Bantu</button>
             </div>
           </div>
-          <img
+          <img data-aos="fade-right" data-aos-delay="300"
             alt="image"
             src="public/playground_assets/lovingdoodle1.svg"
             class="rumah-image06"
           />
-          <img
-            alt="image"
-            src="public/playground_assets/swingingdoodle1.svg"
-            class="rumah-image07"
-          />
-          <img
+          <img data-aos="fade-right" data-aos-delay="300"
             alt="image"
             src="public/playground_assets/group1.svg"
             class="rumah-image08"
           />
         </div>
+        <div class="list-menu pt1">
+               
+        </div>
         <div class="rumah-container09">
           <div class="rumah-container10">
-            <h1 class="rumah-text09">
+            <h1 class="rumah-text09" data-aos="fade-up" data-aos-delay="300">
               <span>Jadilah Saluran</span>
               <br />
               <span>Berkat Bagi Mereka</span>
             </h1>
             <span class="rumah-text13">
-              <span class="rumah-text14">
+              <span class="rumah-text14" data-aos="fade-up" data-aos-delay="400">
                 Pemberian anda sangatlah berarti bagi mereka yang membutuhkan,
                 sehingga adapun kami sebagai media yang mampu mendonasikan
                 kelebihan anda kepada orang lain yang anda dapat rasakan
@@ -150,7 +167,7 @@
             </span>
           </div>
           <div class="rumah-container11">
-            <div class="rumah-container12">
+            <div class="rumah-container12" data-aos="fade-up" data-aos-delay="400">
               <div class="rumah-container13">
                 <img
                   alt="image"
@@ -166,7 +183,7 @@
                 <span class="rumah-text21"></span>
               </span>
             </div>
-            <div class="rumah-container14">
+            <div class="rumah-container14" data-aos="fade-up" data-aos-delay="500">
               <img
                 alt="image"
                 src="public/playground_assets/group%20901.svg"
@@ -178,7 +195,7 @@
                 <span>Pemeriksaan Donasi</span>
               </span>
             </div>
-            <div class="rumah-container15">
+            <div class="rumah-container15" data-aos="fade-up" data-aos-delay="600">
               <img
                 alt="image"
                 src="public/playground_assets/group%20911.svg"
@@ -193,7 +210,7 @@
               </span>
             </div>
           </div>
-          <img
+          <img data-aos="fade-left" data-aos-delay="300"
             alt="image"
             src="public/playground_assets/balletdoodle1.svg"
             class="rumah-image12"
@@ -201,18 +218,18 @@
         </div>
         <div class="rumah-container16">
           <div class="rumah-container17">
-            <img
+            <img data-aos="fade-right" data-aos-delay="300"
               alt="image"
               src="public/playground_assets/group%20921.svg"
               class="rumah-image13"
             />
           </div>
-          <img
+          <img data-aos="fade-right" data-aos-delay="400"
             alt="image"
             src="public/playground_assets/icecreamdoodle1.svg"
             class="rumah-image14"
           />
-          <div class="rumah-container18">
+          <div class="rumah-container18" data-aos="fade-left" data-aos-delay="300">
             <h1 class="rumah-text32">Bagaskara Iswara</h1>
             <span class="rumah-text33">
               &quot;Memberi bukan sekedar untuk mencari sensasi belaka, namun
@@ -223,7 +240,7 @@
         </div>
         <div class="rumah-container19">
           <div class="rumah-container20">
-            <div class="rumah-container21">
+            <div class="rumah-container21" data-aos="fade-right" data-aos-delay="300">
               <h1 class="rumah-text34">Iswari Yowana</h1>
               <span class="rumah-text35">
                 &quot;Pemberian yang diberikan kepada mereka butuhkan tidak
@@ -232,7 +249,7 @@
                 yang membutuhkan&quot;.
               </span>
             </div>
-            <div class="rumah-container22">
+            <div class="rumah-container22" data-aos="fade-left" data-aos-delay="300">
               <img
                 alt="image"
                 src="public/playground_assets/group%20931.svg"
@@ -242,7 +259,7 @@
           </div>
         </div>
         <div class="rumah-container23">
-          <div class="rumah-container24">
+          <div class="rumah-container24" data-aos="fade-left" data-aos-delay="300">
             <div class="rumah-container25">
               <span class="rumah-text36">
                 <span>Kalau bukan</span>
@@ -260,7 +277,7 @@
                 <span></span>
                 <span>Berdonasi</span>
               </h1>
-              <a href="/donasi.html" class="rumah-navlink1 button">Kuy Bantu</a>
+              <button class="rumah-navlink button pt1" data-aos="fade-up" data-aos-delay="500"><a href="donasi.php"></a>Kuy Bantu</button>
               <img
                 alt="image"
                 src="public/playground_assets/dumpingdoodle.svg"
@@ -273,32 +290,32 @@
         </div>
         <div class="rumah-container28">
           <div class="rumah-container29">
-            <h1 class="rumah-text50">Tim Kami</h1>
+            <h1 class="rumah-text50" data-aos="fade-up" data-aos-delay="300">Tim Kami</h1>
             <span class="rumah-text51">
-              <span class="rumah-text52">
+              <span class="rumah-text52" data-aos="fade-up" data-aos-delay="400">
                 Kehadiran situs ini tidak terlepas dari mereka yang
               </span>
               <br />
-              <span class="rumah-text54">
+              <span class="rumah-text54" data-aos="fade-up" data-aos-delay="400">
                 telah bekerja keras dalam pembuatannya.
               </span>
             </span>
             <div class="rumah-container30">
-              <div class="rumah-container31">
+              <div class="rumah-container31" data-aos="fade-up" data-aos-delay="400">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2038.svg"
                   class="rumah-image17"
                 />
               </div>
-              <div class="rumah-container32">
+              <div class="rumah-container32" data-aos="fade-up" data-aos-delay="500">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2039.svg"
                   class="rumah-image18"
                 />
               </div>
-              <div class="rumah-container33">
+              <div class="rumah-container33" data-aos="fade-up" data-aos-delay="600">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2040.svg"
@@ -307,14 +324,14 @@
               </div>
             </div>
             <div class="rumah-container34">
-              <div class="rumah-container35">
+              <div class="rumah-container35" data-aos="fade-up" data-aos-delay="700">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2041.svg"
                   class="rumah-image20"
                 />
               </div>
-              <div class="rumah-container36">
+              <div class="rumah-container36" data-aos="fade-up" data-aos-delay="800">
                 <img
                   alt="image"
                   src="public/playground_assets/group%2042.svg"
@@ -324,16 +341,17 @@
             </div>
           </div>
         </div>
+         
         <div class="rumah-container37">
           <div class="rumah-container38">
-            <h1 class="rumah-text55">Tunggu Apa Lagi</h1>
-            <span class="rumah-text56">
+            <h1 class="rumah-text55" data-aos="fade-up" data-aos-delay="300">Tunggu Apa Lagi</h1>
+            <span class="rumah-text56" data-aos="fade-up" data-aos-delay="400">
               Ayo tunggu apa lagi, mari berdonasi agar mereka yang membutuhkan
               dapat terbantu dengan donasi anda.
             </span>
-            <a href="/donasi.html" class="rumah-navlink2 button">Kuy Bantu</a>
+            <button class="rumah-navlink button" data-aos="fade-up" data-aos-delay="500"><a href="donasi.php"></a>Kuy Bantu</button>
           </div>
-          <div class="rumah-container39">
+          <div class="rumah-container39" data-aos="fade-left" data-aos-delay="300">
             <img
               alt="image"
               src="public/playground_assets/group%2094.svg"
@@ -342,7 +360,7 @@
           </div>
         </div>
         <div class="rumah-container40">
-          <div class="rumah-container41">
+          <div class="rumah-container41" data-aos="fade-right" data-aos-delay="300">
             <textarea
               placeholder="placeholder"
               class="rumah-textarea textarea"
@@ -355,11 +373,11 @@
           </div>
           <div class="rumah-container42">
             <div class="rumah-container43">
-              <div class="rumah-container44">
+              <div class="rumah-container44" data-aos="fade-up" data-aos-delay="300">
                 <h1 class="rumah-text57">Masih Bingung ?</h1>
               </div>
             </div>
-            <span class="rumah-text58">
+            <span class="rumah-text58" data-aos="fade-up" data-aos-delay="400">
               <span>Ayo tanya-tanya aja, kalau mau</span>
               <br />
               <span>kasi kritk atau saran juga boleh.</span>
@@ -367,7 +385,7 @@
           </div>
         </div>
         <div class="rumah-container45">
-          <div class="rumah-container46">
+          <div class="rumah-container46" data-aos="fade-left" data-aos-delay="300">
             <img
               alt="image"
               src="public/playground_assets/group%2096.svg"

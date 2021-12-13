@@ -75,7 +75,7 @@ function dnsdata(){
             for (var i = 0; i < count; i++) {
                 var card = '<div class="donasi-container21" data-aos="fade-up" data-aos-delay="'+tm+'">' +
                 '<div class="hcard">' +
-                '<img src="data:image/jpeg;charset=utf-8;base64,'+response[i].pc+' alt="pic">' +
+                '<img src="data:image/jpeg;base64,'+response[i].pc+' alt="pic">' +
                 '</div>' +
                 '<div class="ccard">' +
                     '<h2>'+response[i].nama+'</h2>' +

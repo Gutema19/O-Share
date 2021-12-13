@@ -84,14 +84,7 @@
   padding-left: 10%;
   border-radius: 20px;
 }
-.donasi-image02 {
-  top: 32px;
-  right: -15px;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  object-fit: cover;
-}
+
 .donasi-container06 {
   width: 1280px;
   height: 676px;
@@ -417,6 +410,10 @@
   padding-bottom: 20px;
   background-color: #4d7520;
 }
+.donasi-button1:hover{
+  padding-left: 12.9% !important;
+  padding-top: 4% !important;
+}
 .donasi-image11 {
   top: 46px;
   left: 100px;
@@ -709,7 +706,7 @@
   margin-top: 30px;
   width : 270px;
   height : 10px;
-  background :#4b4453;
+  background :#A8B4A6;
 }
 .progressbar{
   background :#296122;

@@ -147,6 +147,25 @@ button.bullet-menu.pt1.home, button.bullet-menu.pt1.dnt, button.bullet-menu.pt1.
   margin-top: 4%;
 }
 
-button.bullet-menu.pt1.src-btn{
-  position: relative !important;
+button.src-btn{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding-left: 14px;
+  padding-right: 10px;
+  background: #4D7520;
+  border-radius: 100%;
+  margin-right: -13px;
+  margin-top : 14px;
+}
+
+button:hover {
+  background: #2D4710;
+  padding-left: 10px;
+  transition: 0.3s ease-out;
+  border: 5px solid #4D7520;
+}
+.rumah-textinput.input:focus{
+  transition: 0.3s ease-out;
+  filter: drop-shadow(0px 4px 4px rgba(123, 97, 255, 0.25));
 }

@@ -24,6 +24,15 @@ $(document).ready(function () {
             $('.list-menu').empty();
             tap = 0;
         }
+        $('.bullet-menu.pt1.home').click(function (e) { 
+            e.preventDefault();
+            window.location = "rumah.php";
+        });
+
+        $('.bullet-menu.pt1.dns').click(function (e) { 
+            e.preventDefault();
+            window.location = "donasi.php";
+        });
 
         $('.bullet-menu.pt1.user').click(function (e) { 
             e.preventDefault();

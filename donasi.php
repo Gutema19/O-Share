@@ -84,10 +84,10 @@
                 placeholder="placeholder"
                 class="donasi-textinput input"
               />
-              <button type="button">
+              <button type="button" class="src-btn">
                 <img
                   alt="image"
-                  src="public/playground_assets/search_btn1.svg"
+                  src="public/playground_assets/ant-design_search-outlined.svg"
                   class="donasi-image02"
                 />
               </button>
