@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Lupa Sandi/lupa-sandi-part2.js" type="text/javascript"></script>
+    <script src="Jscript.js" type="text/javascript"></script>
     <style>
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
     </style>
@@ -42,13 +47,20 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <script>
+      AOS.init({
+        delay: 0, 
+        duration: 600, 
+        easing: 'ease-out',
+      });
+    </script>
     <div>
-      <link href="./lupa-sandi-part2.css" rel="stylesheet" />
+      <link href="Lupa Sandi/lupa-sandi-part2.css" rel="stylesheet" />
       <title>Lupa Sandi Part 2 - O-Share</title>
       <meta property="og:title" content="Lupa Sandi Part 2 - O-Share" />
       <div class="lupa-sandi-part2-container">
         <div class="lupa-sandi-part2-container1">
-          <div class="lupa-sandi-part2-container2">
+          <div class="lupa-sandi-part2-container2" data-aos="zoom-in" data-aos-delay="300">
             <img
               alt="image"
               src="public/playground_assets/group%20108.svg"
@@ -62,28 +74,28 @@
           </div>
           <div class="lupa-sandi-part2-container3">
             <div class="lupa-sandi-part2-container4">
-              <h1 class="lupa-sandi-part2-text">Lupa Kata Sandi</h1>
-              <span class="lupa-sandi-part2-text1">
+              <h1 class="lupa-sandi-part2-text" data-aos="fade-up" data-aos-delay="300">Lupa Kata Sandi</h1>
+              <span class="lupa-sandi-part2-text1" data-aos="fade-up" data-aos-delay="400">
                 <span>Silahkan memasukkan alamat surel anda</span>
                 <br />
                 <span>terlebih dahulu dalam memperbaharui kata sandi anda</span>
               </span>
               <img
-                alt="image"
+                alt="image" data-aos="fade-up" data-aos-delay="450"
                 src="public/playground_assets/group%20107.svg"
                 class="lupa-sandi-part2-image2"
               />
             </div>
             <form class="lupa-sandi-part2-form">
-              <div class="lupa-sandi-part2-container5">
+              <div class="lupa-sandi-part2-container5" data-aos="fade-up" data-aos-delay="500">
                 <input
-                  type="text"
-                  placeholder="placeholder"
+                  type="password"
+                  placeholder="Masukkan kata sandi"
                   class="lupa-sandi-part2-textinput input"
                 />
                 <img
                   alt="image"
-                  src="public/playground_assets/ic_sharp-email.svg"
+                  src="public/playground_assets/ri_lock-password-fill1.svg"
                   class="lupa-sandi-part2-image3"
                 />
                 <span class="lupa-sandi-part2-text4">Kata Sandi</span>
@@ -91,17 +103,19 @@
                   alt="image"
                   src="public/playground_assets/el_eye-close.svg"
                   class="lupa-sandi-part2-image4"
+                  onclick="showpass()"
                 />
+                <span class="notif n3 ks"></span>
               </div>
-              <div class="lupa-sandi-part2-container6">
+              <div class="lupa-sandi-part2-container6" data-aos="fade-up" data-aos-delay="700">
                 <input
-                  type="text"
-                  placeholder="placeholder"
+                  type="password"
+                  placeholder="Konfirmasi kata sandi anda"
                   class="lupa-sandi-part2-textinput1 input"
                 />
                 <img
                   alt="image"
-                  src="public/playground_assets/ri_lock-password-fill1.svg"
+                  src="public/playground_assets/fluent_password-24-filled.svg"
                   class="lupa-sandi-part2-image5"
                 />
                 <span class="lupa-sandi-part2-text5">
@@ -111,13 +125,15 @@
                   alt="image"
                   src="public/playground_assets/el_eye-close.svg"
                   class="lupa-sandi-part2-image6"
+                  onclick="showpass1()"
                 />
+                <span class="notif n3 kks"></span>
               </div>
-              <button class="lupa-sandi-part2-button button">
+              <button class="lupa-sandi-part2-button button" data-aos="fade-up" data-aos-delay="700">
                 Ingat Masuk
               </button>
             </form>
-            <span class="lupa-sandi-part2-text6">Sudah ingat kata sandi ?</span>
+            <span class="lupa-sandi-part2-text6" data-aos="fade-up" data-aos-delay="750">Sudah ingat kata sandi ?</span>
           </div>
         </div>
       </div>

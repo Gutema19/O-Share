@@ -76,8 +76,10 @@
   font-family: Cardo;
 }
 .register-part2-image2 {
+  position: absolute;
   width: 100px;
-  margin-top: 5%;
+  margin-left: 1.5%;
+  margin-top: 22%;
   object-fit: cover;
 }
 .register-part2-form {
@@ -101,6 +103,11 @@
   padding-bottom: 2.7%;
   background-color: #4D7520;
 }
+.register-part2-button:hover{
+  padding-top: 2%;
+  padding-left: 6%;
+  padding-bottom: 3.7%;
+} 
 .register-part2-container05 {
   top: 382px;
   left: -119px;
@@ -191,7 +198,11 @@
   font-family: Cardo;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);
+  padding-top: 1.7%;
   border-radius: 10px;
+}
+::-webkit-file-upload-button{
+  display:none;
 }
 .register-part2-image5 {
   top: 0px;
@@ -349,4 +360,23 @@
   width: 20px;
   position: absolute;
   object-fit: cover;
+}
+.notif.n2{
+  font-family: Cardo;
+  font-size: 12px;
+  margin-top: 11%;
+  margin-left: 27%;
+}
+
+.notif.n3{
+  position: absolute;
+  font-family: Cardo;
+  font-size: 12px;
+  margin-top: 23%;
+}
+.register-part2-image8{
+  top: 547px;
+  left: 852px;
+  width: 20px;
+  position: absolute;
 }

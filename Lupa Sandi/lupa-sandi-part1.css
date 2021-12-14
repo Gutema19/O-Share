@@ -96,7 +96,7 @@
   width: 221px;
   height: 59px;
   font-size: 20px;
-  margin-top: 55%;
+  margin-top: 60%;
   text-align: center;
   font-family: Cardo;
   margin-left: 49%;
@@ -110,7 +110,7 @@
 }
 .lupa-sandi-part1-text1 {
   right: 57.7%;
-  bottom: 31.7%;
+  bottom: 29%;
   position: absolute;
   font-size: 18px;
   font-family: Cardo;
@@ -142,4 +142,15 @@
   width: 100px;
   margin-top: 5%;
   object-fit: cover;
+}
+.notif.n3{
+  font-family: Cardo;
+  font-size: 12px;
+  margin-top: 13%;
+  margin-left: 25%;
+}
+.lupa-sandi-part1-button:hover{
+  padding-top: 2.9%;
+  padding-left: 9.8%;
+  padding-bottom: 3.7%; 
 }

@@ -89,7 +89,7 @@
   width: 221px;
   height: 59px;
   font-size: 20px;
-  margin-top: 57%;
+  margin-top: 60%;
   text-align: center;
   font-family: Cardo;
   margin-left: 65.5%;
@@ -101,6 +101,11 @@
   padding-bottom: 2.7%;
   background-color: #4D7520;
 }
+.register-part1-button:hover{
+  padding-top: 2%;
+  padding-left: 6%;
+  padding-bottom: 3.7%;
+} 
 .register-part1-container05 {
   top: 289px;
   left: -119px;
@@ -137,7 +142,7 @@
   font-family: Cardo;
 }
 .register-part1-container06 {
-  top: 382px;
+  top: 390px;
   left: -119px;
   width: 100%;
   height: 88px;
@@ -172,7 +177,7 @@
   font-family: Cardo;
 }
 .register-part1-container07 {
-  top: 382px;
+  top: 389px;
   right: -204px;
   width: 100%;
   height: 88px;
@@ -207,7 +212,7 @@
   font-family: Cardo;
 }
 .register-part1-container08 {
-  top: 482px;
+  top: 490px;
   left: -119px;
   width: 100%;
   height: 88px;
@@ -242,7 +247,7 @@
   font-family: Cardo;
 }
 .register-part1-container09 {
-  top: 482px;
+  top: 490px;
   right: -204px;
   width: 100%;
   height: 88px;
@@ -314,8 +319,14 @@
 }
 .register-part1-text10 {
   right: 68.6%;
-  bottom: 18%;
+  bottom: 15%;
   position: absolute;
   font-size: 18px;
   font-family: Cardo;
+}
+.notif.n1{
+  font-family: Cardo;
+  font-size: 12px;
+  margin-top: 11%;
+  margin-left: 27%;
 }

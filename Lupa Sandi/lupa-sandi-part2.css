@@ -195,3 +195,20 @@
   font-size: 18px;
   font-family: Cardo;
 }
+.notif.n3.ks{
+  font-family: Cardo;
+  font-size: 12px;
+  margin-top: 12%;
+  margin-left: 25%;
+}
+.notif.n3.kks{
+  font-family: Cardo;
+  font-size: 12px;
+  margin-top: 14%;
+  margin-left: -25%;
+}
+.lupa-sandi-part2-button:hover{
+  padding-top: 2.9%;
+  padding-left: 6.5%;
+  padding-bottom: 3.7%; 
+}
