@@ -81,8 +81,8 @@
             <div class="donasi-container05">
               <input
                 type="text"
-                placeholder="placeholder"
-                class="donasi-textinput input"
+                placeholder="Yuk cari donasi"
+                class="donasi-textinput input src"
               />
               <button type="button" class="src-btn">
                 <img

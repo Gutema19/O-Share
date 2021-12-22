@@ -5,7 +5,14 @@
     <title>O-Share</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:card" content="summary_large_image"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Hasil Cari/hasil-cari.js" type="text/javascript"></script>
+    <script src="Jscript.js" type="text/javascript"></script>
+    <link href="Donasi/donasi.css" rel="stylesheet" />
     <style>
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
     </style>
@@ -39,9 +46,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script>
+      AOS.init({
+        delay: 0, 
+        duration: 600, 
+        easing: 'ease-out',
+      });
+    </script>
     <div>
       <link href="Hasil Cari/hasil-cari.css" rel="stylesheet" />
       <title>Hasil Cari - O-Share</title>
@@ -49,11 +63,13 @@
       <div class="hasil-cari-container">
         <div class="hasil-cari-container01">
           <div class="hasil-cari-container02">
-            <img
-              alt="image"
-              src="public/playground_assets/group%2081.svg"
-              class="hasil-cari-image"
-            />
+            <button type="button" class="bullet-menu bck">  
+              <img
+                alt="image"
+                src="public/playground_assets/bx_bx-arrow-back.svg"
+                class="tentang-image00"
+              />
+              </button>
             <span class="hasil-cari-text">Donasi</span>
           </div>
           <div class="hasil-cari-container03">
@@ -66,20 +82,22 @@
           <div class="hasil-cari-container04">
             <input
               type="text"
-              placeholder="placeholder"
-              class="hasil-cari-textinput input"
+              placeholder="Yuk cari donasi"
+              class="hasil-cari-textinput input src"
             />
-            <img
-              alt="image"
-              src="public/playground_assets/search_btn1.svg"
-              class="hasil-cari-image2"
-            />
+            <button type="button" class="src-btn">
+              <img
+                alt="image"
+                src="public/playground_assets/ant-design_search-outlined.svg"
+                class="donasi-image02"
+              />
+            </button>
           </div>
         </div>
         <div class="hasil-cari-container05">
-          <div class="hasil-cari-container06"></div>
-          <div class="hasil-cari-container07"></div>
-          <div class="hasil-cari-container08"></div>
+          <div class="hasil-cari-container06">
+
+          </div>
         </div>
         <div class="hasil-cari-container09">
           <div class="hasil-cari-container10">

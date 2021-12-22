@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+
+    if(!isset($_SESSION['login'])){
+        header('Location: /O-Share/O-Share/login.php');
+    exit;
+    }
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,6 +17,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="Pengguna/pengguna.js" type="text/javascript"></script>
+    <link href="Registrasi/register-part1.css"rel="stylesheet"/>
     <script src="Jscript.js" type="text/javascript"></script>
     <style>
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
@@ -27,7 +38,7 @@
         letter-spacing: normal;
         line-height: 1.15;
         color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+        background-color: #FAFAFA;
 
       }
     </style>
@@ -89,10 +100,10 @@
           <div class="pengguna-container07">
             <form class="pengguna-form">
               <div class="pengguna-container08" data-aos="fade-up">
-                <div class="pengguna-container09"></div>
+                <div class="pengguna-container09"><img class="pengguna-container09" src="" alt="foto-profil"></div>
                 <div class="pengguna-container10">
                   <h1 class="pengguna-text01">
-                    <span class="pengguna-text02">Username</span>
+                    <span class="pengguna-text02"></span>
                   </h1>
                   <div class="pengguna-container11">
                     <img
@@ -107,6 +118,7 @@
                       type="radio"
                       name="radio"
                       class="pengguna-radiobutton"
+                      value="1"
                     />
                     <span class="pengguna-text04">Laki-laki</span>
                   </div>
@@ -115,6 +127,7 @@
                       type="radio"
                       name="radio"
                       class="pengguna-radiobutton1"
+                      value="4"
                     />
                     <span class="pengguna-text05">Lainnya</span>
                   </div>
@@ -123,6 +136,7 @@
                       type="radio"
                       name="radio"
                       class="pengguna-radiobutton2"
+                      value="2"
                     />
                     <span class="pengguna-text06">Perempuan</span>
                   </div>
@@ -131,6 +145,7 @@
                       type="radio"
                       name="radio"
                       class="pengguna-radiobutton3"
+                      value="3"
                     />
                     <span class="pengguna-text07">Privasi</span>
                   </div>
@@ -139,7 +154,7 @@
               <div class="pengguna-container16" data-aos="fade-up" data-aos-delay="600">
                 <input
                   type="text"
-                  placeholder="placeholder"
+                  placeholder="Masukkan nama lengkap"
                   class="pengguna-textinput input"
                 />
                 <img
@@ -148,11 +163,12 @@
                   class="pengguna-image03"
                 />
                 <span class="pengguna-text08">Nama Lengkap</span>
+                <span class="notif n2 fn"></span>
               </div>
               <div class="pengguna-container17" data-aos="fade-up" data-aos-delay="800">
                 <input
                   type="text"
-                  placeholder="placeholder"
+                  placeholder="Masukkan nama panggilan"
                   class="pengguna-textinput1 input"
                 />
                 <img
@@ -161,24 +177,24 @@
                   class="pengguna-image04"
                 />
                 <span class="pengguna-text09">Nama Panggilan</span>
+                <span class="notif n2 cn"></span>
               </div>
               <div class="pengguna-container18" data-aos="fade-up" data-aos-delay="900">
-                <input
-                  type="text"
-                  placeholder="placeholder"
-                  class="pengguna-textinput2 input"
-                />
+              <select name="" id="" class="pengguna-textinput2 input">
+                  <option value="0" name="Pname" class="register-part1-">Pilihlah Provinsi</option>
+              </select>
                 <img
                   alt="image"
                   src="public/playground_assets/map_city-hall.svg"
                   class="pengguna-image05"
                 />
                 <span class="pengguna-text10">Provinsi</span>
+                <span class="notif n2 pn"></span>
               </div>
               <div class="pengguna-container19" data-aos="fade-up" data-aos-delay="1000">
                 <input
                   type="text"
-                  placeholder="placeholder"
+                  placeholder="Masukkan alamat surel"
                   class="pengguna-textinput3 input"
                 />
                 <img
@@ -187,24 +203,24 @@
                   class="pengguna-image06"
                 />
                 <span class="pengguna-text11">Alamat Surel</span>
+                <span class="notif n2 sn"></span>
               </div>
               <div class="pengguna-container20" data-aos="fade-up" data-aos-delay="1100">
-                <input
-                  type="text"
-                  placeholder="placeholder"
-                  class="pengguna-textinput4 input"
-                />
+              <select name="" id="" class="pengguna-textinput4 input">
+                  <option value="0" name="kname" class="register-part1-">Pilihlah Kabupaten</option>
+              </select>
                 <img
                   alt="image"
                   src="public/playground_assets/bx_bxs-city.svg"
                   class="pengguna-image07"
                 />
                 <span class="pengguna-text12">Kabupaten/Kota</span>
+                <span class="notif n2 kn"></span>
               </div>
               <div class="pengguna-container21" data-aos="fade-up" data-aos-delay="700">
                 <input
-                  type="text"
-                  placeholder="placeholder"
+                  type="number"
+                  placeholder="Masukkan no telepon"
                   class="pengguna-textinput5 input"
                 />
                 <img
@@ -213,13 +229,14 @@
                   class="pengguna-image08"
                 />
                 <span class="pengguna-text13">No Telepon</span>
+                <span class="notif n2 tn"></span>
               </div>
               <img  data-aos="fade-up" data-aos-delay="500"
                 alt="image"
                 src="public/playground_assets/rectangle%2044.svg"
                 class="pengguna-image09"
               />
-              <button class="pengguna-button1 button"  data-aos="fade-up" data-aos-delay="1200">Simpan</button>
+              <button type="button" class="pengguna-button1 button"  data-aos="fade-up" data-aos-delay="1200">Simpan</button>
             </form>
             <img data-aos="fade-left" data-aos-delay="500"
               alt="image"
@@ -234,7 +251,21 @@
             <span class="pengguna-text16"></span>
           </h1>
         </div>
-        <div class="pengguna-container23"></div>
+        <div class="pengguna-container23">
+          <table class="table table-borderless pt1" data-aos="fade-up" data-aos-delay="300">
+            <thead data-aos="fade-up" data-aos-delay="300">
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Donasi</th>
+                <th scope="col">Kategori Donasi</th>
+                <th scope="col">keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
         <div class="pengguna-container24">
           <div class="pengguna-container25">
             <img

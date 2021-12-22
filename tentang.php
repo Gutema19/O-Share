@@ -79,8 +79,8 @@
             <div class="tentang-container05">
               <input
                 type="text"
-                placeholder="placeholder"
-                class="tentang-textinput input"
+                placeholder="Yuk cari donasi"
+                class="tentang-textinput input src"
             />
             <button type="button" class="src-btn">
               <img

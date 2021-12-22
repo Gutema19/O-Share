@@ -24,11 +24,20 @@ function setdns(){
 function back(){
     $('.bullet-menu.bck').click(function (e) { 
         e.preventDefault();
-        window.location = "donasi.php";
+        window.location.href = "donasi.php";
+    });
+}
+
+function next(){
+    var iddnt = decodeURI(id_period);
+    $('.donasi-part1-button').click(function (e) { 
+        e.preventDefault();
+        window.location.href = "donasi-part2.php?id="+iddnt+"";
     });
 }
 
 $(document).ready(function () {
     setdns();
+    next();
     back();
 });

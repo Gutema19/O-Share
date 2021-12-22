@@ -116,6 +116,7 @@
                   type="file"
                   placeholder="Masukkan foto profil"
                   class="register-part2-textinput2 input"
+                  accept='image/*'
                 />
                 <img data-aos="zoom-in" data-aos-delay="500"
                   alt="image"
@@ -172,7 +173,7 @@
                 </div>
                 <span class="notif n3 jk"></span>
               </div>
-              <div class="register-part2-container14"></div>
+              <img src="public/playground_assets/Ellipse 5.svg" class="register-part2-container14">
             </form>
             <span data-aos="fade-up" data-aos-delay="900" class="register-part2-text12">Sudah punya akun ?</span>
           </div>

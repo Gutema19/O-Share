@@ -88,8 +88,8 @@
             <div class="rumah-container05">
               <input
                 type="text"
-                placeholder="placeholder"
-                class="rumah-textinput input"
+                placeholder="Yuk cari donasi"
+                class="rumah-textinput input src"
               />
               <button type="button" class="src-btn">
               <img

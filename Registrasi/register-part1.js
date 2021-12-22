@@ -44,22 +44,6 @@ function snvalid(){
         return false;
     }
 }
-
-function tnvalid(){
-
-    if($('.register-part1-textinput5').val() > 11){
-        $('.register-part1-textinput5').css('border', '0.5px solid #4d7520');
-        $('.register-part1-textinput5').css('transition', '0.3s ease-out');
-        $('.notif.n1.sn').html("");
-        return true;
-    }else{
-        $('.register-part1-textinput5').css("border", "2px solid #B41E42");
-        $('.register-part1-textinput5').css("transition", "0.3s ease-out");
-        $(".notif.n1.sn").html("*Alamat Surel Tidak Valid");
-        return false;
-    }
-}
-
 function tnvalid(){
 
     if($('.register-part1-textinput5').val() != 0){
@@ -105,30 +89,94 @@ function knvalid(){
     }
 }
 
+function provdt(){
+    $.ajax({
+        type: "GET",
+        url: "database/provinsidata.php",
+        dataType: "JSON",
+        success: function (response) {
+            var count = response.length;
+            
+            for(var i=0; i<count; i++) {
+                var prvdt = "<option value='"+response[i].id+"' name='Pname' class='register-part1-'>"+response[i].nprv+"</option>";
+ 
+                $(".register-part1-textinput2").append(prvdt);
+            }
+            kabdata();
+
+        }
+    });
+}
+
+function kabdata(){
+    $('.register-part1-textinput2').change(function (e) { 
+        $(".register-part1-textinput4").empty();
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "database/kabdata.php",
+            data: {id_prov: $(".register-part1-textinput2").val()},
+            dataType: "JSON",
+            success: function (response) {
+                var count = response.length;
+                
+                for(var i=0; i<count; i++) {
+                    var kbtdt = "<option value='"+response[i].id+"'>"+response[i].nkab+"</option>";
+    
+                    $(".register-part1-textinput4").append(kbtdt);
+                }
+            }
+        });
+    });
+}
+
+function savedtpt1(){
+    $.ajax({
+        type: "POST",
+        url: "database/insregdata0.php",
+        data:{
+            fname: $('.register-part1-textinput').val(),
+            cname: $('.register-part1-textinput1').val(),
+            sname: $('.register-part1-textinput3').val(),
+            tname: $('.register-part1-textinput5').val(),
+            pname: $('.register-part1-textinput2').val(),
+            kname: $('.register-part1-textinput4').val()
+        },
+        dataType: "JSON",
+        success: function (response) {
+            if(response.status==1){
+                window.location = "register-part2.php"; 
+            }
+    },
+        error: function (response) {
+                alert('Error');
+        }
+    });
+}
 
 $(document).ready(function () {
+    provdt();
+
     $(".register-part1-button.button").on("click", function(e) { 
        e.preventDefault();
        
-       fnvalid();
-       cnvalid();
-       snvalid();
-       tnvalid();
-       pnvalid();
-       knvalid();
+       var fn = fnvalid();
+       var cn = cnvalid();
+       var sn = snvalid();
+       var tn = tnvalid();
+       var pn = pnvalid();
+       var kn = knvalid();
 
-       if(fnvalid()==true && cnvalid()==true && snvalid()==true && tnvalid()==true && pnvalid()==true && knvalid()==true){
-           
+
+       if(fn==true && cn==true && sn==true && tn==true && pn==true && kn==true){
+            savedtpt1(); 
        }
     });
 
     $(".register-part1-text10").on("click", function(e) { 
         e.preventDefault();
-        window.location = "login.html"; 
+        window.location = "login.php"; 
      });
 
-     $(".register-part1-image2").on("click", function(e) { 
-        e.preventDefault();
-        window.location = "register-part2.html"; 
-     });
+
 });

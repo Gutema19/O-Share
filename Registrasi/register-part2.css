@@ -338,13 +338,9 @@
   width: 200px;
   height: 200px;
   display: flex;
-  box-shadow: 5px 5px 10px 0px #d4d4d4;
   margin-top: -24%;
   align-items: flex-start;
   margin-left: 62%;
-  border-color: #4D7520;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 100%;
 }
 .register-part2-text12 {

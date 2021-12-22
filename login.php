@@ -1,3 +1,12 @@
+<?php 
+    session_start();
+
+    if(isset($_SESSION['login'])){
+        header('Location: /O-Share/O-Share/donasi.php');
+    exit;
+    }
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">

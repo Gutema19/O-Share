@@ -88,22 +88,16 @@
 .hasil-cari-container05 {
   flex: 0 0 auto;
   width: 100%;
-  height: 400px;
-  display: flex;
+  height: auto;
   margin-top: 5%;
   align-items: flex-start;
-  padding-left: 14.3%;
-  padding-right: 20%;
+  padding-left: 160px;
+  padding-right: 150px;
+  padding-bottom: 200px;
   justify-content: flex-start;
 }
 .hasil-cari-container06 {
-  flex: 0 0 auto;
-  width: 314px;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: 400px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  padding-bottom: 15%;
 }
 .hasil-cari-container07 {
   flex: 0 0 auto;

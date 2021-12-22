@@ -1,3 +1,13 @@
+
+/*var link = document.URL;
+var fname = link.substring(link.lastIndexOf('/fname=')+1);
+var cname = link.substring(link.lastIndexOf('/cname=')+1);
+var sname = link.substring(link.lastIndexOf('/sname=')+1);
+var tname = link.substring(link.lastIndexOf('/tname=')+1);
+var pname = link.substring(link.lastIndexOf('/pname=')+1);
+var kname = link.substring(link.lastIndexOf('/kname=')+1);*/
+
+
 function showpass(){
     var pass = document.getElementsByTagName('input')[0];
     if (pass.type === "password") {
@@ -64,7 +74,7 @@ function kksvalid(){
 }
 
 function fpvalid(){
-
+    
     if($('.register-part2-textinput2').val() != 0){
         $('.register-part2-textinput2').css('border', '0.5px solid #4d7520');
         $('.register-part2-textinput2').css('transition', '0.3s ease-out');
@@ -78,10 +88,60 @@ function fpvalid(){
     }
 }
 
+function upfoto(){
+    $('input[type=file]').change(function (e) { 
+        e.preventDefault();
+        var file    = document.querySelector('input[type=file]').files[0];
+        //var src = file.createObjectURL();
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function(e) {
+                // browser completed reading file - display it
+                var setfp = e.target.result;
 
+                $('.register-part2-container14').attr('src', setfp);
+
+                
+            }
+    });
+}
+
+function insreg2(){
+
+    var jkname = $('input[name=radio]:checked').val();
+    var pass = $('.register-part2-textinput').val();
+    var fp =  document.querySelector('input[type=file]').files[0].name;
+    var file_data = $('.register-part2-textinput2').prop('files')[0]; 
+    var form_data = new FormData();
+    form_data.append('jkname', jkname);
+    form_data.append('pass', pass);
+    form_data.append('fp', fp);
+    form_data.append('file', file_data);
+
+    $.ajax({
+        url : 'database/instregdata.php',
+        type: 'POST',
+        dataType: 'JSON',
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,
+        success: function (response) {
+            if(response.status == 1){
+                alert('Success');
+                window.location = "login.php"; 
+            }
+        },
+        error: function (response) {
+                alert('Error');
+        }
+    });
+}
 
 
 $(document).ready(function () {
+
+    upfoto();
     $(".register-part2-button.button").on("click", function(e) { 
        e.preventDefault();
        
@@ -89,20 +149,15 @@ $(document).ready(function () {
        ksvalid();
        kksvalid();
        fpvalid();
-
+       
        if(jkvalid()==true && ksvalid()==true && kksvalid()==true && fpvalid()==true){
-           
+          insreg2();
        }
     });
 
     $(".register-part2-image2").on("click", function(e) { 
         e.preventDefault();
         window.location = "register-part1.html"; 
-     });
-
-    $(".register-part2-button").on("click", function(e) { 
-        e.preventDefault();
-        window.location = "login.html"; 
      });
 
      $(".register-part2-text12").on("click", function(e) { 

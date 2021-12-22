@@ -50,11 +50,31 @@ function kksvalid(){
     }
 }
 
+function upnpass() {
+    $.ajax({
+        type: "POST",
+        url: "database/newpass.php",
+        data: {npass : $('.lupa-sandi-part2-textinput1').val()},
+        dataType: "JSON",
+        success: function (response) {
+            if(response.status == 1){
+                alert('Success');
+                window.location = "login.php";
+            }
+        }
+    });
+}
+
+
 $(document).ready(function () {
     $(".lupa-sandi-part2-button").on("click", function(e) { 
         e.preventDefault();
         kksvalid();
         ksvalid();
+
+        if(ksvalid()==true && kksvalid()==true){
+            upnpass(); 
+        }
      });
 
      $(".lupa-sandi-part2-text6").on("click", function(e) { 

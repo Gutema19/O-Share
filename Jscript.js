@@ -1,3 +1,18 @@
+function srcdnt(){
+    $.ajax({
+        type: "POST",
+        url: "database/srcdata.php",
+        data: {src: $('.src').val()},
+        dataType: "JSON",
+        success: function (response) {
+            if(response.status == 1){
+                alert('Success');
+                window.location = 'hasil-cari.php';
+            }
+        }
+    });
+}
+
 $(document).ready(function () {
 
     var tap = 0;
@@ -14,6 +29,13 @@ $(document).ready(function () {
         '<img src="public/playground_assets/cib_about-me.svg" alt="About Page">' +
         '</button><br>';
 
+    $('.src-btn').click(function (e) { 
+        e.preventDefault();
+        if($('.src').val() != 0){
+            srcdnt();
+        }
+    });
+
     $('button.bullet-menu').click(function (e) { 
         e.preventDefault();
         
@@ -29,19 +51,19 @@ $(document).ready(function () {
             window.location = "rumah.php";
         });
 
-        $('.bullet-menu.pt1.dns').click(function (e) { 
+        $('.bullet-menu.pt1.dnt').click(function (e) { 
             e.preventDefault();
             window.location = "donasi.php";
         });
 
         $('.bullet-menu.pt1.user').click(function (e) { 
             e.preventDefault();
-            window.location = "pengguna.html";
+            window.location = "pengguna.php";
         });
 
         $('.bullet-menu.pt1.about').click(function (e) { 
             e.preventDefault();
-            window.location = "tentang.html";
+            window.location = "tentang.php";
         });
     });
    
