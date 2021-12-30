@@ -78,7 +78,7 @@
   text-align: center;
   font-family: Cardo;
   margin-left: var(--dl-space-space-oneandhalfunits);
-  padding-top: 15px;
+  padding-top: 20px;
   margin-right: var(--dl-space-space-oneandhalfunits);
   padding-left: 60px;
   border-radius: 20px;
@@ -87,7 +87,7 @@
   background-color: var(--dl-color-danger-300);
 }
 .admin-pengguna-button1:hover{
-  padding-top: 10px;
+  padding-top: 16px;
   padding-left: 60px;
   padding-bottom: 20px;
   transition: 0.3s ease-out;

@@ -29,4 +29,8 @@ $(document).ready(function () {
         e.preventDefault();
         window.location = "admin-add-donasi.php";
     });
+    $(".admin-list-donasi-button1").click(function (e) { 
+        e.preventDefault();
+        window.location.href= "database/logout.php";
+    });
 });

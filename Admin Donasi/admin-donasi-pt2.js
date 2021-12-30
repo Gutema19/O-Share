@@ -49,4 +49,8 @@ $(document).ready(function () {
         e.preventDefault();
         window.location = "admin-donasi-pt1.php";
     });
+    $(".admin-donasi-pt2-button1").click(function (e) { 
+        e.preventDefault();
+        window.location.href= "database/logout.php";
+    });
 });

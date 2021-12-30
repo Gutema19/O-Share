@@ -175,8 +175,12 @@ $(document).ready(function () {
         e.preventDefault();
         deldata();
     });
-    $(".admin-add-donasi-button").click(function (e) { 
+    $(".admin-edit-donasi-button").click(function (e) { 
         e.preventDefault();
         window.location = "admin-list-donasi.php";
+    });
+    $(".admin-edit-donasi-button1").click(function (e) { 
+        e.preventDefault();
+        window.location.href= "database/logout.php";
     });
 });

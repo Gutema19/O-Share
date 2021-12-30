@@ -28,4 +28,8 @@ $(document).ready(function () {
         e.preventDefault();
         window.location = "admin-home.php";
     });
+    $(".admin-pengguna-button1").click(function (e) { 
+        e.preventDefault();
+        window.location.href= "database/logout.php";
+    });
 });

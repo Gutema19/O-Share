@@ -143,4 +143,8 @@ $(document).ready(function () {
         e.preventDefault();
         window.location = "admin-list-donasi.php";
     });
+    $(".admin-add-donasi-button1").click(function (e) { 
+        e.preventDefault();
+        window.location.href= "database/logout.php";
+    });
 });

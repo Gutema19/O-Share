@@ -24,4 +24,4 @@ session_start();
     }
     echo json_encode($result);
 
-    ?>
+?>

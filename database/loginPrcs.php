@@ -12,15 +12,16 @@
 
         if ($rowsum == 1){
            $result['status'] = 1;
-           $_SESSION['login'] = true;
 
            while($row = mysqli_fetch_assoc($select)){
                $id = $row['id'];
            }
            if($id == 1){
              $result['role'] = 1;
+             $_SESSION['loginadmin'] = true;
            }else{
              $result['role'] = 2;
+             $_SESSION['login'] = true;
            }
 
            $_SESSION['id'] = $id;
