@@ -28,7 +28,7 @@ function vlogin(){
             success: function (response) {
              if (response.status == 1){
                 if(response.role == 1){
-                    window.location = "tentang.php";
+                    window.location = "admin-home.php";
                 }else{
                     window.location = "rumah.php";
                 }

@@ -6,7 +6,6 @@ function srcdnt(){
         dataType: "JSON",
         success: function (response) {
             if(response.status == 1){
-                alert('Success');
                 window.location = 'hasil-cari.php';
             }
         }
