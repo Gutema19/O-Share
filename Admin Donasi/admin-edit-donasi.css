@@ -1,4 +1,4 @@
-.admin-add-donasi-container {
+.admin-edit-donasi-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -6,13 +6,13 @@
   align-items: center;
   flex-direction: column;
 }
-.admin-add-donasi-container01 {
+.admin-edit-donasi-container01 {
   width: 100%;
   height: 157px;
   display: flex;
   align-items: flex-start;
 }
-.admin-add-donasi-container02 {
+.admin-edit-donasi-container02 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -22,7 +22,7 @@
   padding-top: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.admin-add-donasi-container03 {
+.admin-edit-donasi-container03 {
   flex: 0 0 auto;
   width: 300px;
   height: 100px;
@@ -32,7 +32,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.admin-add-donasi-button {
+.admin-edit-donasi-button {
   width: 50px;
   height: 50px;
   padding-left: 4.5%;
@@ -40,12 +40,12 @@
   border-radius: var(--dl-radius-radius-round);
   background-color: #4d7520;
 }
-.admin-add-donasi-text {
+.admin-edit-donasi-text {
   font-family: Cardo;
   margin-left: var(--dl-space-space-unit);
   margin-right: 0px;
 }
-.admin-add-donasi-container04 {
+.admin-edit-donasi-container04 {
   flex: 0 0 auto;
   width: 300px;
   height: 100px;
@@ -54,11 +54,11 @@
   flex-direction: column;
   justify-content: center;
 }
-.admin-add-donasi-image {
+.admin-edit-donasi-image {
   width: 100px;
   object-fit: cover;
 }
-.admin-add-donasi-container05 {
+.admin-edit-donasi-container05 {
   flex: 0 0 auto;
   width: 300px;
   height: 100px;
@@ -68,7 +68,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.admin-add-donasi-button1 {
+.admin-edit-donasi-button1 {
   color: #fdfdfc;
   width: 226px;
   height: 61px;
@@ -79,6 +79,7 @@
   font-family: Cardo;
   margin-left: var(--dl-space-space-oneandhalfunits);
   padding-top: 20px;
+  border-width: 0px;
   margin-right: var(--dl-space-space-oneandhalfunits);
   padding-left: 60px;
   border-radius: 20px;
@@ -86,7 +87,7 @@
   padding-bottom: 20px;
   background-color: var(--dl-color-danger-300);
 }
-.admin-add-donasi-button1:hover{
+.admin-edit-donasi-button1:hover{
   padding-top: 16px;
   padding-left: 60px;
   padding-bottom: 20px;
@@ -94,7 +95,7 @@
   background: #701414;
   border: 5px solid #A22020;
 }
-.admin-add-donasi-container06 {
+.admin-edit-donasi-container06 {
   width: 100%;
   height: 249px;
   display: flex;
@@ -104,7 +105,7 @@
   padding-right: 18%;
   justify-content: flex-start;
 }
-.admin-add-donasi-text01 {
+.admin-edit-donasi-text01 {
   color: #2d4710;
   font-size: 64px;
   font-style: normal;
@@ -112,15 +113,15 @@
   font-family: Oswald;
   font-weight: 400;
 }
-.admin-add-donasi-image1 {
-  top: 15px;
-  left: 742px;
-  width: 277px;
-  height: 213px;
+.admin-edit-donasi-image1 {
+  top: 6px;
+  left: 717px;
+  width: 332px;
+  height: 284px;
   position: absolute;
   object-fit: cover;
 }
-.admin-add-donasi-container07 {
+.admin-edit-donasi-container07 {
   width: 100%;
   height: 756px;
   display: flex;
@@ -130,20 +131,20 @@
   padding-right: 0%;
   justify-content: center;
 }
-.admin-add-donasi-container08 {
+.admin-edit-donasi-container08 {
   flex: 0 0 auto;
   width: 32%;
   height: 100%;
   display: flex;
   position: relative;
-  border-radius: 10px;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  border-radius: 10px;
   background-color: #FFFFFF;
 }
-.admin-add-donasi-text05 {
+.admin-edit-donasi-text05 {
   top: 5%;
   left: 5%;
   position: absolute;
@@ -153,14 +154,14 @@
   font-family: Oswald;
   font-weight: 400;
 }
-.admin-add-donasi-text06 {
+.admin-edit-donasi-text06 {
   color: #4d7520;
 }
-.admin-add-donasi-form {
+.admin-edit-donasi-form {
   width: 370px;
   height: 577px;
 }
-.admin-add-donasi-container09 {
+.admin-edit-donasi-container09 {
   top: 88px;
   left: -174px;
   width: 100%;
@@ -170,7 +171,7 @@
   margin-top: var(--dl-space-space-oneandhalfunits);
   align-items: flex-start;
 }
-.admin-add-donasi-textinput {
+.admin-edit-donasi-textinput {
   top: 30px;
   left: 191px;
   color: var(--dl-color-gray-black);
@@ -182,20 +183,20 @@
   padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
 }
-.admin-add-donasi-image2 {
+.admin-edit-donasi-image2 {
   top: 0px;
   left: 190px;
   width: 24px;
   position: absolute;
   object-fit: cover;
 }
-.admin-add-donasi-text07 {
+.admin-edit-donasi-text07 {
   top: 3px;
   left: 219px;
   position: absolute;
   font-family: Cardo;
 }
-.admin-add-donasi-container10 {
+.admin-edit-donasi-container10 {
   top: 189px;
   left: -172px;
   width: 100%;
@@ -205,7 +206,7 @@
   margin-top: var(--dl-space-space-oneandhalfunits);
   align-items: flex-start;
 }
-.admin-add-donasi-textinput1 {
+.admin-edit-donasi-textinput1 {
   top: 30px;
   left: 191px;
   color: var(--dl-color-gray-black);
@@ -217,20 +218,20 @@
   padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
 }
-.admin-add-donasi-image3 {
+.admin-edit-donasi-image3 {
   top: 0px;
   left: 190px;
   width: 24px;
   position: absolute;
   object-fit: cover;
 }
-.admin-add-donasi-text08 {
+.admin-edit-donasi-text08 {
   top: 5px;
   left: 219px;
   position: absolute;
   font-family: Cardo;
 }
-.admin-add-donasi-container11 {
+.admin-edit-donasi-container11 {
   left: -176px;
   width: 100%;
   bottom: 346px;
@@ -241,20 +242,20 @@
   align-items: center;
   justify-content: flex-start;
 }
-.admin-add-donasi-image4 {
+.admin-edit-donasi-image4 {
   top: 0px;
   left: 190px;
   width: 24px;
   position: absolute;
   object-fit: cover;
 }
-.admin-add-donasi-text09 {
+.admin-edit-donasi-text09 {
   top: 3px;
   left: 219px;
   position: absolute;
   font-family: Cardo;
 }
-.admin-add-donasi-textarea {
+.admin-edit-donasi-textarea {
   top: 36px;
   left: 195px;
   width: 345px;
@@ -263,7 +264,7 @@
   border-color: #4d7520;
   border-radius: 10px;
 }
-.admin-add-donasi-container12 {
+.admin-edit-donasi-container12 {
   left: -172px;
   width: 100%;
   bottom: 120px;
@@ -273,7 +274,7 @@
   margin-top: var(--dl-space-space-oneandhalfunits);
   align-items: flex-start;
 }
-.admin-add-donasi-textinput2 {
+.admin-edit-donasi-textinput2 {
   top: 30px;
   left: 191px;
   color: var(--dl-color-gray-black);
@@ -282,14 +283,14 @@
   position: absolute;
   font-family: Cardo;
   border-color: #4d7520;
-  padding-left: var(--dl-space-space-twounits);
   padding-top: 3.5%;
+  padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
 }
 ::-webkit-file-upload-button{
   display:none;
 }
-.admin-add-donasi-image5 {
+.admin-edit-donasi-image5 {
   top: -1px;
   left: 193px;
   width: 24px;
@@ -297,14 +298,14 @@
   position: absolute;
   object-fit: cover;
 }
-.admin-add-donasi-text10 {
+.admin-edit-donasi-text10 {
   top: 5px;
   left: 219px;
   position: absolute;
   font-family: Cardo;
 }
-.admin-add-donasi-container13 {
-  right: 40px;
+.admin-edit-donasi-container13 {
+  left: -13px;
   width: 100%;
   bottom: 19px;
   height: 88px;
@@ -314,14 +315,44 @@
   align-items: center;
   justify-content: flex-end;
 }
-.admin-add-donasi-button2 {
+.admin-edit-donasi-button2 {
+  top: 16px;
+  left: 35px;
+  color: #fdfdfc;
+  width: 160px;
+  height: 54px;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  font-family: Cardo;
+  padding-top: 3.8%;
+  border-color: #950e0e;
+  border-width: 2px;
+  padding-left: 30px;
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-bottom: 3.8%;
+  background-color: transparent;
+}
+.admin-edit-donasi-button2:hover{
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-bottom: 15px;
+  transition: 0.3s ease-out;
+  background: transparent;
+  border: 5px solid #A22020;
+}
+.admin-edit-donasi-text11 {
+  color: #950e0e;
+}
+.admin-edit-donasi-button3 {
   color: #fdfdfc;
   width: 160px;
   height: 54px;
   font-size: 18px;
   text-align: center;
   font-family: Cardo;
-  margin-left: 20%;
+  margin-right: 6%;
   padding-top: 3.8%;
   padding-left: 30px;
   border-radius: 20px;
@@ -329,13 +360,13 @@
   padding-bottom: 3.8%;
   background-color: #4D7520;
 }
-.admin-add-donasi-button2:hover{
-  padding-top: 3%;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 3.8%;
-} 
-.admin-add-donasi-container14 {
+.admin-edit-donasi-button3:hover{
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-bottom: 15px;
+  transition: 0.3s ease-out;
+}
+.admin-edit-donasi-container14 {
   flex: 0 0 auto;
   width: 32%;
   height: 100%;
@@ -344,7 +375,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.admin-add-donasi-container15 {
+.admin-edit-donasi-container15 {
   flex: 0 0 auto;
   width: 369px;
   height: 447px;

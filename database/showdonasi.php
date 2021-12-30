@@ -13,11 +13,13 @@ if ($rowsum > 0){
     while($row = mysqli_fetch_assoc($select)){
 
         $num = $no++;
+        $id = $row['id'];
         $dn = $row['donasi'];
         $ctg = $row['kategori'];
         
         $result[] = array(
             "no" => $num,
+            "id" => $id,
             "dn" => $dn,
             "ctg" => $ctg);
     }

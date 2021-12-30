@@ -12,7 +12,7 @@ function setdns(){
 
             for(var i = 0; i < count; i++) {
                 $('.donasi-part1-text03').html(response[i].nama);
-                $('.donasi-part1-image04').attr('src', 'data:image/jpeg;charset=utf-8;base64,'+response[i].pc+'');
+                $('.donasi-part1-image04').attr('src', 'database/'+response[i].pc+'');
                 $('.donasi-part1-text04').html(response[i].sum);
                 $('.donasi-part1-text05').html('Rp.'+response[i].pis);
                 $('.donasi-part1-text11').html(response[i].nt);

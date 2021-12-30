@@ -11,7 +11,7 @@ function donasidata(){
                    '<td scope="col">'+response[i].no+'</td>' +
                    '<td scope="col">'+response[i].dn+'</td>' +
                    '<td scope="col">'+response[i].ctg+'</td>' +
-                   '<td scope="col"><img src="public/playground_assets/Icon Left.svg" alt="set" class="setmore"></td>' +
+                   '<td scope="col"><a href="admin-edit-donasi.php?&id='+response[i].id+'"><img src="public/playground_assets/Icon Left.svg" alt="set" class="setmore"></td>' +
              '</tr>';
               $('.table.table-borderless.pt1 tbody').append(dtnsts);
             }           
@@ -21,8 +21,12 @@ function donasidata(){
 
 $(document).ready(function () {
     donasidata();
-    $(".admin-donasi-pt1-button").click(function (e) { 
+    $(".admin-list-donasi-button").click(function (e) { 
         e.preventDefault();
         window.location = "admin-home.php";
+    });
+    $(".admin-list-donasi-button2").click(function (e) { 
+        e.preventDefault();
+        window.location = "admin-add-donasi.php";
     });
 });

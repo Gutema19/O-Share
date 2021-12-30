@@ -16,7 +16,7 @@
             $note = $row['keterangan'];
             $prs = $row['presentase'];
             $jml = $row['jumlah'];
-            $pic = base64_encode($row['foto']);
+            $pic = $row['foto'];
             $mny = $row['uang'];
     
             $result[] = array(
