@@ -5,7 +5,7 @@
         header('Location: /O-Share/O-Share/donasi.php');
     exit;
     }
-    if(isset($_SESSION['loginadmin'])){
+    else if(isset($_SESSION['loginadmin'])){
       header('Location: /O-Share/O-Share/admin-home.php');
     exit;
     }

@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+
+    if(!isset($_SESSION['loginadmin']) && isset($_SESSION['id']) > 1){
+        header('Location: /O-Share/O-Share/tentang.php');
+    exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

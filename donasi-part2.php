@@ -4,8 +4,7 @@
     if(!isset($_SESSION['login'])){
         header('Location: /O-Share/O-Share/login.php');
     exit;
-    }
-  
+    } 
 ?>
 
 <!DOCTYPE html>
