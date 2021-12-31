@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+
+    if(isset($_SESSION['valpass'])){
+        header('Location: /O-Share/O-Share/lupa-sandi-part2.php');
+    exit;
+    }
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -28,7 +36,7 @@
         letter-spacing: normal;
         line-height: 1.15;
         color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+        background-color: #F8FFF8;
 
       }
     </style>

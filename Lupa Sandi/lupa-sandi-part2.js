@@ -2,10 +2,10 @@ function showpass(){
     var pass = document.getElementsByTagName('input')[0];
     if (pass.type === "password") {
         pass.setAttribute('type','text');
-        //document.getElementsByTagName('img')[3].src="Asset/el_eye-open.svg";
+        document.getElementsByTagName('img')[4].src="public/playground_assets/el_eye-open.svg";
     }else{
         pass.setAttribute('type','password');
-        //document.getElementsByTagName('img')[3].src="Asset/el_eye-close.svg";
+        document.getElementsByTagName('img')[4].src="public/playground_assets/el_eye-close.svg";
     }
 }
 
@@ -13,10 +13,10 @@ function showpass1(){
     var pass = document.getElementsByTagName('input')[1];
     if (pass.type === "password") {
         pass.setAttribute('type','text');
-        //document.getElementsByTagName('img')[3].src="Asset/el_eye-open.svg";
+        document.getElementsByTagName('img')[6].src="public/playground_assets/el_eye-open.svg";
     }else{
         pass.setAttribute('type','password');
-        //document.getElementsByTagName('img')[3].src="Asset/el_eye-close.svg";
+        document.getElementsByTagName('img')[6].src="public/playground_assets/el_eye-close.svg";
     }
 }
 
@@ -79,6 +79,6 @@ $(document).ready(function () {
 
      $(".lupa-sandi-part2-text6").on("click", function(e) { 
         e.preventDefault();
-        window.location = "login.html";
+        window.location = "login.php";
      });
 });

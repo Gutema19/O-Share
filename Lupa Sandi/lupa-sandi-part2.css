@@ -102,6 +102,7 @@
   height: 51px;
   position: absolute;
   font-family: Cardo;
+  background: transparent;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
@@ -147,6 +148,7 @@
   position: absolute;
   font-family: Cardo;
   border-color: #4d7520;
+  background: transparent;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
 }

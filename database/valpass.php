@@ -13,6 +13,7 @@
       while($row = mysqli_fetch_assoc($select)){
         $iduser = $row['id'];
         }
+        $_SESSION['valpass'] = true;
         $_SESSION['iduser'] = $iduser;
     }   
     else{

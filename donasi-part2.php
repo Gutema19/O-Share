@@ -38,7 +38,7 @@
         letter-spacing: normal;
         line-height: 1.15;
         color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+        background-color: #F8FFF8;
 
       }
     </style>

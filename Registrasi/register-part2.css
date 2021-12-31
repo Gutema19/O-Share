@@ -125,6 +125,7 @@
   width: 286px;
   height: 45px;
   position: absolute;
+  background: transparent;
   font-family: Cardo;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);
@@ -161,6 +162,7 @@
   height: 45px;
   position: absolute;
   font-family: Cardo;
+  background: transparent;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
@@ -196,6 +198,7 @@
   height: 45px;
   position: absolute;
   font-family: Cardo;
+  background: transparent;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);
   padding-top: 1.7%;

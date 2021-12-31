@@ -753,3 +753,9 @@
   padding: 2.5%;
 }
 
+.list-menu{
+  position: absolute;
+  margin-left: 19.1% !important;
+  margin-right: 30%;
+  margin-top: 120px;
+}

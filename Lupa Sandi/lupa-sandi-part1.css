@@ -73,6 +73,7 @@
   width: 446px;
   height: 51px;
   position: absolute;
+  background: transparent;
   font-family: Cardo;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);

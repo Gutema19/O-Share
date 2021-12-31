@@ -178,5 +178,9 @@ $(document).ready(function () {
         window.location = "login.php"; 
      });
 
+     $(".register-part1-image2").click(function (e) { 
+         e.preventDefault();
+         window.location = "register-part2.php";  
+     });
 
 });

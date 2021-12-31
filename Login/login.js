@@ -2,10 +2,10 @@ function showpass(){
     var pass = document.getElementsByTagName('input')[1];
     if (pass.type === "password") {
         pass.setAttribute('type','text');
-        //document.getElementsByTagName('img')[3].src="Asset/el_eye-open.svg";
+        document.getElementsByTagName('img')[4].src="public/playground_assets/el_eye-open.svg";
     }else{
         pass.setAttribute('type','password');
-        //document.getElementsByTagName('img')[3].src="Asset/el_eye-close.svg";
+        document.getElementsByTagName('img')[4].src="public/playground_assets/el_eye-close.svg";
     }
 }
 

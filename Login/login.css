@@ -95,6 +95,7 @@
   height: 51px;
   position: absolute;
   font-family: Cardo;
+  background: transparent;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
@@ -131,6 +132,7 @@
   height: 51px;
   position: absolute;
   font-family: Cardo;
+  background: transparent;
   border-color: #4d7520;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 10px;
@@ -195,7 +197,7 @@
   padding-left: 57px;
   border-radius: 20px;
   padding-right: 57px;
-  background-color: #fdfdfc;
+  background: transparent;
   position: absolute;
 }
 .login-button1:hover{

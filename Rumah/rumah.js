@@ -30,4 +30,13 @@ function dnsdata(){
 
 $(document).ready(function() {
     dnsdata();
+
+    $(".rumah-navlink.button").click(function (e) { 
+        e.preventDefault();
+       window.location = "donasi.php"; 
+    });
+    $(".rumah-navlink.button.pt1").click(function (e) { 
+        e.preventDefault();
+       window.location = "donasi.php"; 
+    });
 });
